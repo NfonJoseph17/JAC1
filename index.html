@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - JAC</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -16,72 +17,103 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+    <!--<nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
         <div class="container"><a class="navbar-brand" href="#">JAC SOLUTION</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"></button>
             <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary ms-auto" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In</a></div>
+        </div>
+    </nav>-->
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">JAC</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#homesection" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#whysection" class="nav-link">Why Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contactsection" class="nav-link">Contact Us</a>
+                    </li>
+                    <li>
+                        <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary ms-auto"
+                                role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In</a></div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div class="form-group">
-                <input type="text" name="username" class="form-control" placeholder="Username"> 
-               </div>
-                <div class="form-group">
-                <input type="password" name="password" class="form-control" placeholder="Password"> 
-               </div>
-       
-        </div>
-        <div class="modal-footer">
-         <div class="modal-footer">
-             <button type="submit" class="btn btn-success">Sign in</button>
-         </div>
-        
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" name="username" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password">
+                    </div>
 
-    <header class="text-center text-white masthead" style="background:url('assets/img/bg-showcase-2.jpg')no-repeat center center;background-size:cover;">
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Sign in</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header id="homesection" class="text-center text-white masthead"
+        style="background:url('assets/img/bg-showcase-2.jpg') no-repeat center center;background-size:cover;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 mx-auto position-relative">
                     <h1 id="hero-head" class="mb-5">JAC WEB SOLUTION</h1>
-                    <p id="hero-desc">We are the leading website creation group for over 21 years</p>
+                    <p id="hero-desc">We are the leading website creation group for over 11 years</p>
                 </div>
             </div>
         </div>
     </header>
-    <section class="text-center bg-light features-icons">
+    <section id="whysection" class="text-center bg-light features-icons">
         <h2 class="mb-5">Why Choose Us...</h2>
         <header></header>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-                        <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary"
+                                data-bss-hover-animate="pulse"></i></div>
                         <h3>Responsive Websites</h3>
                         <p class="lead mb-0">Our websites look great on all screen sizes</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-                        <div class="d-flex features-icons-icon"><i class="icon-speedometer m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <div class="d-flex features-icons-icon"><i class="icon-speedometer m-auto text-primary"
+                                data-bss-hover-animate="pulse"></i></div>
                         <h3>Fast Creation</h3>
                         <p class="lead mb-0">We Build Websites in the Shortest time possible</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-                        <div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary"
+                                data-bss-hover-animate="pulse"></i></div>
                         <h3>Effective work</h3>
                         <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
                     </div>
@@ -95,18 +127,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-1.jpg">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3"
+                            src="assets/img/testimonials-1.jpg">
                         <h5>A. Thelma.</h5>
+                        <p>A database specialist with great skills in MUNGO.db, jquery-3 and Mysql.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-2.jpg">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3"
+                            src="assets/img/testimonials-2.jpg">
                         <h5>N. Joseph.</h5>
+                        <p>Very skilled backend developer, spcialized in javascript and python.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-3.jpg">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3"
+                            src="assets/img/testimonials-3.jpg">
                         <h5>K. Christel.</h5>
+                        <p>Our very own front nd developer with exceptional skills Figma.</p>
                     </div>
                 </div>
             </div>
@@ -127,11 +165,18 @@
                                     <h4 class="display-6 fw-bold">100,000 FCFA</h4>
                                     <hr>
                                     <ul class="list-unstyled">
-                                        <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg text-primary">
-                                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                                        <li class="d-flex mb-2"><span
+                                                class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="currentColor" viewBox="0 0 16 16"
+                                                    class="bi bi-check-lg text-primary">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z">
+                                                    </path>
                                                 </svg></span><span>Simple one page websites.</span></li>
                                     </ul>
-                                </div><a class="btn btn-primary d-block w-100" role="button" href="#contact-row">Contact Us</a>
+                                </div><a class="btn btn-primary d-block w-100" role="button" href="#contact-row">Contact
+                                    Us</a>
                             </div>
                         </div>
                     </div>
@@ -143,17 +188,36 @@
                                     <h4 class="display-6 fw-bold">250,000 FCFA</h4>
                                     <hr>
                                     <ul class="list-unstyled">
-                                        <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg text-primary">
-                                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                                        <li class="d-flex mb-2"><span
+                                                class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="currentColor" viewBox="0 0 16 16"
+                                                    class="bi bi-check-lg text-primary">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z">
+                                                    </path>
                                                 </svg></span><span>Multiple Page Website</span></li>
-                                        <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg text-primary">
-                                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                                        <li class="d-flex mb-2"><span
+                                                class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="currentColor" viewBox="0 0 16 16"
+                                                    class="bi bi-check-lg text-primary">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z">
+                                                    </path>
                                                 </svg></span><span>Ecommerce website</span></li>
-                                        <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg text-primary">
-                                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                                        <li class="d-flex mb-2"><span
+                                                class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="currentColor" viewBox="0 0 16 16"
+                                                    class="bi bi-check-lg text-primary">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z">
+                                                    </path>
                                                 </svg></span><span>Progressive Web applications.</span></li>
                                     </ul>
-                                </div><a class="btn btn-primary d-block w-100" role="button" href="#contact-row">Contact Us</a>
+                                </div><a class="btn btn-primary d-block w-100" role="button" href="#contact-row">Contact
+                                    Us</a>
                             </div>
                         </div>
                     </div>
@@ -169,17 +233,21 @@
                     </tbody>
                 </table>
             </div>
-            <div class="container position-relative">
+            <div id="contactsection" class="container position-relative">
                 <div class="row d-flex justify-content-center" id="contact-row">
                     <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-7">
                         <div class="card mb-5">
                             <div class="card-body p-sm-5">
                                 <h2 class="text-center mb-4">Contact us</h2>
                                 <form method="post">
-                                    <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name"></div>
-                                    <div class="mb-3"><input class="form-control" type="email" id="email-2" name="email" placeholder="Email"></div>
-                                    <div class="mb-3"><textarea class="form-control" id="message-2" name="message" rows="6" placeholder="Message"></textarea></div>
-                                    <div><button class="btn btn-primary d-block w-100" type="submit">Send </button></div>
+                                    <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name"
+                                            placeholder="Name"></div>
+                                    <div class="mb-3"><input class="form-control" type="email" id="email-2" name="email"
+                                            placeholder="Email"></div>
+                                    <div class="mb-3"><textarea class="form-control" id="message-2" name="message"
+                                            rows="6" placeholder="Message"></textarea></div>
+                                    <div><button class="btn btn-primary d-block w-100" type="submit">Send </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -218,9 +286,9 @@
     <script type="text/javascript" src="assets/js/jquery-3.6.0"></script>
 
     <script>
-    $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-   })
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
     </script>
 </body>
 
